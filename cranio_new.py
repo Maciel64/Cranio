@@ -1,5 +1,6 @@
 from Segunda_parte import segunda_parte
 #O nome será esse temporariamente
+from imagens import carregar_imagens
 dicionario_lista={158:0,156:1,153:2,155:3,150:4,157:5,152:6,149:7,151:8,154:9,8:12345}
 #Dicionario criado para que seja possivel capturar as chaves do teclado que será usado no IFPB
 #Um dia capturando pockemom, e outro chaves, onde vamos parar?
