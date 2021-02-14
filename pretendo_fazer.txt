@@ -1,0 +1,2 @@
+Pretendo remodelar o codigo para uma verasão melhor, vou colocar no imagens.py todo o codigo relacionado a carregar imagens
+Minha outra intenção é acabar por completo o atual arquivo Primeira_parte.py e Segunda_parte.py, trocando por varios outros arquivos que não precise repetir as mesmas linhas
