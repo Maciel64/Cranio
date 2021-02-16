@@ -6,6 +6,7 @@ class carregar_imagens:
         self.imagem = cv2.imread("imagens_funcionamento"+sep+imagem)
         #Aqui ele fará a leitura da iamgem, coloquei para trabalhar com self pelo motivo que será reusado
         self.imagem2 = self.imagem[15:465,850:1300]
+        #Essa será a parte que será retirado em um quadrado para escrever na tela
     
     def mostrar_imagem(self, tempo):
         cv2.imshow("Cranio",self.imagem)
@@ -17,7 +18,9 @@ class carregar_imagens:
     
     def girar(self,graus):
 		(alt,lar) = self.imagem2.shape[:2]
+        #Aqui se pega a altura e a largura da parte da imagem que eu defenir
 		self.imagem2 = cv2.warpAffine(self.imagem2, cv2.getRotationMatrix2D((lar // 2, alt // 2), graus, 1.0), (lar, alt))
+        #Aqui faz todo o processo de girar a imagem
     
     def tela_cheia(self):
 		cv2.namedWindow("Cranio", cv2.WINDOW_NORMAL)
