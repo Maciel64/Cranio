@@ -5,8 +5,10 @@ dicionario={158:0,156:1,153:2,155:3,150:4,157:5,152:6,149:7,151:8,154:9,8:12345}
 #Um dia capturando pockemom, e outro chaves, onde vamos parar?
 matricula = ""
 cor=(255,255,255)
+primeira_imagem = carregar_imagens("cranio.jpg")
 while True:
-    chave = int(carregar_imagens("cranio.jpg").mostrar_imagem(0))
+    primeira_imagem.girar_escrever(matricula,cor)
+    chave = int(primeira_imagem.mostrar_imagem(0))
     print(matricula)
     #Nessa linha se carrega a imagem ao mesmo tempo que recolhe a chave do teclado
     if chave==-1 or (chave==13 and len(matricula)==12):
