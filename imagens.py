@@ -31,14 +31,12 @@ class carregar_imagens:
         cv2.putText(self.imagem2,matricula,coordenadas, cv2.FONT_HERSHEY_SIMPLEX,1.2,cor,2,cv2.LINE_AA)
         #Aqui que se escrever o texto
         self.girar(90)
-    
-    def colar_imagem(self):
-        self.imagem[15:465,850:900] = self.imagem2[0:450,0:50]
-        #Aqui será colado de volta o pedaço em que está o texto
 
     def texto_matricula(self,matricula,cor):
         (alt,lar) = self.imagem2.shape[:2]
         eixo_y = lar//2
-        eixo_y = eixo_y - len(matricula) * 5
+        eixo_y = eixo_y - len(matricula) * 20
         #Essas três linhas recolhem, descobremo meio do tamanho da imagem, sendo na ultima determina o calculo para a matricula ficar centralizada
         self.girar_escrever(matricula,cor,(eixo_y,32))
+        self.imagem[15:465,850:900] = self.imagem2[0:450,0:50]
+        #Aqui será colado de volta o pedaço em que está o texto

@@ -7,7 +7,7 @@ matricula = ""
 cor=(255,255,255)
 primeira_imagem = carregar_imagens("cranio.jpg")
 while True:
-    primeira_imagem.girar_escrever(matricula,cor)
+    primeira_imagem.texto_matricula(matricula,cor)
     chave = int(primeira_imagem.mostrar_imagem(0))
     print(matricula)
     #Nessa linha se carrega a imagem ao mesmo tempo que recolhe a chave do teclado
